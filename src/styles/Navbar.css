@@ -1,0 +1,111 @@
+﻿header {
+    background-color: #0A3D62;
+    padding: 22px 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+
+.logo h2 {
+    color: white;
+    font-size: 32px;
+}
+
+/* Navigation Links */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+    nav ul li {
+        cursor: pointer;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+            nav ul li a:hover {
+                color: #2ECC71;
+            }
+
+/* Login & Register Buttons */
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.login-btn,
+.register-btn {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* Login Button */
+
+.login-btn {
+    background: white;
+    color: #0A3D62;
+    border: 2px solid white;
+}
+
+    .login-btn:hover {
+        background: #2ECC71;
+        border-color: #2ECC71;
+        color: white;
+    }
+
+/* Register Button */
+
+.register-btn {
+    background: #2ECC71;
+    color: white;
+    border: 2px solid #2ECC71;
+}
+
+    .register-btn:hover {
+        background: transparent;
+        color: white;
+        border-color: white;
+    }
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+    .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .login-btn,
+    .register-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,55 @@
+﻿.cta {
+    background: #0A3D62;
+    color: white;
+    text-align: center;
+    padding: 80px 70px;
+}
+
+    .cta h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .cta p {
+        max-width: 700px;
+        margin: 0 auto 35px;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #f0f0f0;
+    }
+
+    .cta button {
+        background: #2ECC71;
+        color: white;
+        border: none;
+        padding: 16px 40px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+        .cta button:hover {
+            background: white;
+            color: #0A3D62;
+            transform: translateY(-3px);
+        }
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .cta {
+        padding: 60px 20px;
+    }
+
+        .cta h2 {
+            font-size: 30px;
+        }
+
+        .cta p {
+            font-size: 16px;
+        }
+}

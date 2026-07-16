@@ -1,0 +1,134 @@
+﻿.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 70px;
+    background: #f8f9fa;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+    .hero-text h1 {
+        font-size: 60px;
+        font-weight: 700;
+        color: #0A3D62;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+
+    .hero-text span {
+        color: #2ECC71;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 35px;
+        line-height: 1.7;
+    }
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.primary-btn {
+    display: inline-block;
+    background: #2ECC71;
+    color: white;
+    text-decoration: none;
+    padding: 16px 38px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all .3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+    .primary-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(46,204,113,.35);
+    }
+
+.secondary-btn {
+    background: transparent;
+    border: 2px solid #0A3D62;
+    color: #0A3D62;
+    padding: 15px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .secondary-btn:hover {
+        background: #0A3D62;
+        color: white;
+    }
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+    .hero-image img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+}
